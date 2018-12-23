@@ -1,0 +1,21 @@
+.pagini{
+    height: 500px;
+    max-height: 600px;
+    display: inline-block;
+}
+legend{
+    display: block;
+  padding-left: 2px;
+  padding-right: 2px;
+  border: none;
+}
+footer{
+    padding: 10px;
+  margin: 0;
+  background: #282C35;
+  color: rgba(255, 255, 255, 0.774);
+  font-size: 12px;
+}
+.margenscimabaixo{
+    margin: 20px 0px 30px 0px;
+}
