@@ -7,7 +7,7 @@ function ActivePage() {
     let winLocation = window.location.pathname
     let indexPage = 0
     switch (winLocation) {
-        case '/index.html':
+        case '/edicoesAnteriores.html':
             indexPage = 0
             break;
         case '/informacoes.html':
@@ -17,10 +17,13 @@ function ActivePage() {
         case '/inscricoes.html':
             indexPage = 2
             break;
+        
+        default: indexPage = 7
+            break;
     }
     // navlinks[2].className = 'nav-item active'
     // console.log(indexPage)
-    // console.log(winLocation)
+    console.log(winLocation)
 
     for (let i = 0; i < navlinks.length; i++) {
         if (i == indexPage) {
@@ -177,12 +180,12 @@ function getTeamNameHome() {
 }
 
 
-function clear(){
+function clear() {
     console.log('ola')
     document.getElementById('nomeEquipa').value = ""
     document.getElementById('nElementos').value = "1"
 }
-if(document.getElementById('clear')) document.getElementById('clear').addEventListener('click', clear)
+if (document.getElementById('clear')) document.getElementById('clear').addEventListener('click', clear)
 
 window.onload = function () {
     window.addEventListener('keypress', event => {
@@ -211,7 +214,7 @@ window.onload = function () {
     //
     getTeamNameHome()
 
-    
+
 }
 
 
