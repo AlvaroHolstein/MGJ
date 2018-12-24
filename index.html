@@ -87,18 +87,21 @@
 
 
                 <div class="col-sm-3 text-center ">
-                    <!-- <fieldset> -->
-                    <!-- <legend> -->
                     <h3>Inscrições</h3>
-                    <!-- </legend> -->
-                    <p>
-                        <h6>Nome da Equipa</h6><input type="text" name="" id="">
-                    </p>
-                    <p>
-                        <h6>Nº elementos</h6><input type="number">
-                    </p>
-                    <button class="btn btn-danger">alalalal</button>
-                    <!-- </fieldset> -->
+                    <form id="criarEquipaHome">
+                        <p>
+                            <label for="nomeEquipaHome">Nome da Equipa</label>
+                            <input id="nomeEquipaHome" type="text" title="Insere o nome da tua equipa"
+                                placeholer="Inventa..." class="form-control" required>
+                        </p>
+                        <p>
+                            <label for="nEquipaHome">Nº elementos</label>
+                            <input id="nEquipaHome" type="number" min="1" max="5" value="1" title="A tua equipa pode ter no máximo 5 elementos"
+                                palceholder="" class="form-control" required>
+                        </p>
+                        <!-- Meter este butão no fundo do div -->
+                        <button type="submit" class="btn btn-success" title="Vais ser levado/a para a página das inscrições">Submeter</button>
+                    </form>
                 </div>
             </div>
             <div class="row text-center" style="margin: 30px 0px 30px 0px">
@@ -141,7 +144,7 @@
 
             <div style="margin: 30px 0px 30px 0px">
                 <section>
-                    <div class="row text-center" >
+                    <div class="row text-center">
                         <div class="col-sm-6 ">
                             <h1>Informações</h1>
                             <p>Inscrições: As incrições já se encontram fechadas, número limite de participantes
@@ -197,7 +200,7 @@
         </div>
 
     </div>
-    <footer class="text-center text-xs-center text-sm-left text-md-left">
+    <footer class="text-center text-xs-center text-sm-left text-md-left margemtopfooter">
         <fieldset>
             <p><a href="https://www.facebook.com/madgamejam/">Facebook</a>
             </p>

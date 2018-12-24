@@ -57,13 +57,52 @@
         </nav>
     </div>
 
-    <section class="container">
+    <section id="containerInscricoes" class="container">
         <h1 class="text-center">Isto é a página das inscrições</h1>
+
+        <div class="row">
+            <!-- Descrição da equipa -->
+            <div class="col-sm-3 text-center" style="border-right: 1px solid gray">
+                <h1>Fazer Equipa</h1>
+                <fieldset id="formEquipa"> 
+                    <label for="nomeEquipa">
+                        <h5>Nome Equipa</h5>
+                    </label>
+                    <input id="nomeEquipa" type="text" class="form-control" placeholder="Inventa...." autofocus
+                        required>
+                    <label for="nElementos">
+                        <h5>Nº Elementos</h5>
+                    </label>
+                    <input id="nElementos" type="number" class="form-control" min="1" max="5" value="0" required>
+                    <div style="margin-top: 15px;">
+                        <!-- <button type="submit" class="btn btn-success">Submeter</button> -->
+                        <button id="clear" class="btn btn-danger" >Limpar</button>
+                    </div>
+                </fieldset>
+            </div>
+
+            <!-- Elementos da Equipa -->
+            <div class="col-sm-9 text-sm-left">
+                <h1 class="text-center">
+                    Elementos
+                </h1>
+
+                <form id="nomeElementos">
+                    <div id="containerElementos">
+                    </div>
+                    <div class="text-center" style="margin-top: 20px">
+                        <button type="submit" class="btn btn-success">Finalizar Inscrição</button>
+                        <button type="reset" class="btn btn-danger">Limpar Nomes</button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
     </section>
 
 
 
-    <footer class="text-center text-xs-center text-sm-left text-md-left">
+    <footer class="text-center text-xs-center text-sm-left text-md-left margemtopfooter">
         <fieldset>
             <p><a href="https://www.facebook.com/madgamejam/">Facebook</a>
             </p>

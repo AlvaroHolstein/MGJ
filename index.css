@@ -13,9 +13,15 @@ footer{
     padding: 10px;
   margin: 0;
   background: #282C35;
-  color: rgba(255, 255, 255, 0.774);
+  color: rgba(253, 252, 252, 0.774);
   font-size: 12px;
 }
 .margenscimabaixo{
     margin: 20px 0px 30px 0px;
+}
+.margemtopfooter{
+    margin-top: 30px;
+}
+body{ /* Mudar a cor disto */
+    background-color: rgb(255, 228, 197);
 }
