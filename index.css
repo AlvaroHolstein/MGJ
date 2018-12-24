@@ -1,6 +1,6 @@
 .pagini{
-    height: 500px;
-    max-height: 600px;
+    height: 400px;
+    /* max-height: auto; */
     display: inline-block;
 }
 legend{
