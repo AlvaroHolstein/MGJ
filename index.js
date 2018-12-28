@@ -17,7 +17,7 @@ function ActivePage() {
         case '/inscricoes.html':
             indexPage = 2
             break;
-        
+
         default: indexPage = 7
             break;
     }
@@ -97,8 +97,11 @@ function edition() {
             images: ['img1', 'img2', 'img3']
         }]
 
-
-        let ano = JSON.parse(localStorage.getItem('ano'))
+        let ano = 0
+        if (localStorage.getItem('ano')) ano = parseInt(JSON.parse(localStorage.getItem('ano')))
+        else {
+          ano = "por Definir"
+        }
 
         document.getElementById('tituloEA').innerHTML = 'Edição de ' + ano
     }
@@ -208,7 +211,7 @@ window.onload = function () {
     //Caso esteja na página Edições Anteriores
     edition()
 
-    //Atualizar o 
+    //Atualizar o
     alterarNumElementos()
 
     //
@@ -216,5 +219,3 @@ window.onload = function () {
 
 
 }
-
-
