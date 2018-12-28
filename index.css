@@ -25,3 +25,30 @@ footer{
 body{ /* Mudar a cor disto */
     background-color: rgb(255, 228, 197);
 }
+.imagemFundo {
+    background-image: url("./images/logoMad.png");
+    background-size: cover;
+    background-color: darkgoldenrod;
+}
+.image{
+    width: 100%;
+}
+.image:hover {
+    src: url("./images/faviconMGJ.png");
+    background-color: rgb(127, 127, 172);
+    border-radius: 30px;
+    /* -webkit-transform: scaleX(-1);
+    transform: scaleX(-1); */
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif, Times, serif;
+}
+/*Mapa*/
+#map{
+   height: 200px;
+   width: 100%;
+}
+.espaco{
+    border: 1px solid brown;
+    border-radius: 5px;
+}
