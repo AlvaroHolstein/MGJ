@@ -231,6 +231,16 @@ function getTeamMembers(event) {
             footer: '<a href="./edicoesAnteriores.html">Podes ir ver a Edição do ano passado<a>'
         })
         console.log(equipa)
+
+        //enviar email para avisar que mais uma equipa se inscrever
+        // emailjs.send("gmail", "mgj_contact_form", form).
+        // then(response => {
+        //     console.log('Boa ', response.status, response.text)
+        // },
+        //     error => {
+        //         console.log('Ups ', error)
+        //     }
+        // )
     }
     else{
         Swal('O que pode estar mal','Tens que ter pelo menos um membro na equipa e a tua equipa tem que ter um nome', 'error')
