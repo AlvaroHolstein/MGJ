@@ -1,11 +1,5 @@
 # Neste ficheiro vão estar as notas que vou fazendo e as funcionalidades que vão ser adicionadas
 
-## Esta é a organização que me pareceu melhor para o site mas obviamente pode ser alterada, as cores são todas provisórias
-## Falta fazer a pagina das Edições Anteriores
-## Falta Fazer a parte de autenticação e guardar equipas e utilizadores e comunicar com o servidor
-## Onde se vai meter um mapa com a localização da faculdade ???????
-## Adicionar <meta>
-
 #Importante:
 - Tem que se instalar alguns node modules, por isso dentro da pasta El site tem que se fazer: 
 ```
@@ -18,3 +12,10 @@ npm install
 - Ainda estou a ir buscar demasiadas bibliotecas por CDN e não por NPM.
 - A página de inscrições está praticamente terminada, falta só saber como se vai guardar as equipas inscritas
 - Já foram adicionados mapas, um deles está na modal de ajuda
+
+## 01/01/2019
+- O site está todo responsivo, e praticamente completo a nivel estrutural, agora falta tornar-lo rápido e gerir a informação das edições Anteriores de maneira a não sobrecarregar o site
+- Falta apenas o footer, mas para o acabar também é preciso o logo dos patrocionadores
+- Todas as imagens que o site tem podem ser alteradas
+- Falta Fazer a parte de autenticação e guardar equipas e utilizadores e comunicar com o servidor
+- Adicionar ```<meta>```
