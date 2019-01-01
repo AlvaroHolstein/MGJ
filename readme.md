@@ -1,6 +1,6 @@
 # Neste ficheiro vão estar as notas que vou fazendo e as funcionalidades que vão ser adicionadas
 
-#Importante:
+### Importante:
 - Tem que se instalar alguns node modules, por isso dentro da pasta El site tem que se fazer: 
 ```
 npm install
