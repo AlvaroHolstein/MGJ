@@ -70,29 +70,29 @@
     </nav>
 
     <section class="container">
-        <h1 class="text-center">Isto é a página dos contactos</h1>
+        <h1 class="text-center">Tens alguma duvida? Chuta</h1>
+        <fieldset class="row text-left">
+            <form id="contact-us">
 
-        <form id="contact-us">
-            <fieldset class="text-center">
-                <div class="margenscimabaixo">
-                    Nome: * <input type="text" id="nome" class="form-control" style="width: 50%; display: inline-block;"
-                        required>
+                <div class="margenscimabaixo col-sm-12">
+                    <h6>Nome: * </h6>
+                    <input type="text" id="nome" class="form-control" required>
 
                 </div>
-                <div>
-                    <p>Nome Equipa:</p> <input type="text" id="nomeequipa" class="form-control" style="width: 50%; display: inline-block;">
+                <div class="col-sm-12">
+                    <h6> Nome Equipa:</h6> <input type="text" id="nomeequipa" class="form-control">
                 </div>
-                <div class="margenscimabaixo">
-                    Email: * <input type="mail" id="mail" class="form-control" style="width: 50%; display: inline-block;"
+                <div class="margenscimabaixo col-sm-12">
+                    <h6>Email: *</h6> <input type="mail" id="mail" class="form-control" 
                         required>
                 </div>
-                <div>
+                <div class="col-sm-12">
                     <p>Mensagem: *</p>
-                    <textarea id="msg" rows="10" class="form-control" style="width: 60%;display: inline-block; resize:none"
+                    <textarea id="msg" rows="10" class="form-control" style="resize:none;"
                         required placeholder="Qual é a tua duvida, conta-nos"></textarea>
                 </div>
 
-                <div class="margenscimabaixo">
+                <div class="margenscimabaixo col-sm-12 text-center">
                     <button type="submit" class="btn btn-success">
                         Enviar
                     </button>
@@ -100,8 +100,9 @@
                         Limpar
                     </button>
                 </div>
-            </fieldset>
-        </form>
+
+            </form>
+        </fieldset>
     </section>
 
 
