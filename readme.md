@@ -19,3 +19,6 @@ npm install
 - Todas as imagens que o site tem podem ser alteradas
 - Falta Fazer a parte de autenticação e guardar equipas e utilizadores e comunicar com o servidor
 - Adicionar ```<meta>```
+
+## 09/01/2019
+- O template de toda a parte de administrador fui buscar [aqui https://startbootstrap.com/template-overviews/sb-admin/]s(https://startbootstrap.com/template-overviews/sb-admin/), ver também o ```Admin Page/LICENSE```

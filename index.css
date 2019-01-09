@@ -67,3 +67,18 @@ ul.list-inline > li {
       background-color: lightblue;
     }
 } */
+
+/*Css página Admin*/
+.card-equipa{
+    margin-bottom: 1rem;    
+}
+.card-equipa  ul {
+    list-style-type: none;
+}
+/* #searchTeamTable{
+    width: fi;
+} */
+.iconsNav-diretita{
+    border: 2px solid red;
+    border-radius: 15px;   
+}
