@@ -151,6 +151,8 @@ function inserirCampos(nCampos) {
         let mailLabel = document.createElement('label')
         let mail = document.createElement('input')
         let espaco = document.createElement('hr')
+        let escolaLabel = document.createElement('label')
+        let escola = document.createElement('input')
 
         //
         article.className = "remove"
@@ -165,13 +167,19 @@ function inserirCampos(nCampos) {
         mailLabel.innerHTML = "Mail:"
         mailLabel.setAttribute('for', mail.id)
         espaco.className = 'espaco'
+        escola.setAttribute('id', 'escola')
+        escola.className = 'form-control escola'
+        escola.setAttribute('required', '')
+        escolaLabel.innerHTML = "Escola"
+        escolaLabel.setAttribute('for', escola.id)
         //
         article.appendChild(nomeLabel)
         article.appendChild(nome)
         article.appendChild(mailLabel)
         article.appendChild(mail)
+        article.appendChild(escolaLabel)
+        article.appendChild(escola)
         article.appendChild(espaco)
-
         //
         divPai.appendChild(article)
     }

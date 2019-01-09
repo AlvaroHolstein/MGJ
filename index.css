@@ -22,9 +22,6 @@ footer{
 .margemtopfooter{
     margin-top: 30px;
 }
-body{ /* Mudar a cor disto */
-    background-color: rgb(255, 228, 197);
-}
 .imagemFundo {
     background-image: url("./images/logoMad.png");
     background-size: cover;
@@ -41,7 +38,9 @@ body{ /* Mudar a cor disto */
     transform: scaleX(-1); */
 }
 body{
-    font-family: Verdana, Geneva, Tahoma, sans-serif, Times, serif;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif, Times, serif; */
+    font-family: helvetica;
+    background-color: white;
 }
 /*Mapa*/
 #map{
@@ -62,6 +61,40 @@ body{
 ul.list-inline > li {
     margin: 5px 0px 5px 0px;
 }
+.divInfoRegulamento {
+    /* border: 2px solid #282C35; */
+    border-radius: 50px;
+    background-color: wheat; 
+    height: auto;
+    min-height: 500px;
+}
+.divInsc {
+    border-radius: 50px;
+    background-color: wheat; 
+}
+.devilhr{
+    border: 2px solid black;
+    border-radius: 50px;
+    width: 100%;
+    animation: 5s infinite alternate irrequieto;
+}
+@keyframes irrequieto {
+    from {
+        width: 100%;
+        border: 2px solid black;
+    }
+    to {
+        width: 0%;
+        border: 2px solid blue;
+    }
+}
+.a{
+    height: auto;
+    min-height: 500px;
+}
+#c1, #c2 {
+    background-color: black;
+} 
 /* @media only screen and (max-width: 600px) {
     body {
       background-color: lightblue;
