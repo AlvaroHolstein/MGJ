@@ -9,8 +9,13 @@
     <!-- 
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
     <script src="./node_modules/bootstrap/dist/"></script> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+        crossorigin="anonymous">
+    <!-- <script src="http://code.jquery.com/jquery-latest.min.js"></script> -->
 
-
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@7.33.1/dist/sweetalert2.all.min.js">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
         crossorigin="anonymous">
     <link rel="stylesheet" href="./index.css">
@@ -67,7 +72,7 @@
                     <a class="nav-link" href="http://www.intermediartes.com">Intermidiartes</a>
                 </li>
                 <li>
-                    <p href="" class="nav-link disabled" style="margin: 0px; cursor: help;" title="clica no ? para teres mais ajuda"
+                    <p href="" class="nav-link" style="margin: 0px; cursor: help;" title="clica no ? para teres mais ajuda"
                         data-toggle="modal" data-target="#manualsobrevivenciaModal">?</p>
                 </li>
             </ul>
@@ -76,56 +81,285 @@
     </nav>
 
     <section id="containerInscricoes" class="container">
-        <h1 class="text-center" style="text-shadow:1px 1px 0 #444">Inscrição na Mad Game Jam</h1>
-        <div class="row" style="margin: 30px 0px 30px 0px">
+        <div class="row text-center" style="margin: 30px 0px 30px 0px">
             <!-- <iframe style="display: inline-block" width="100%" height="330px" src="https://www.youtube.com/embed/P31jTmDtEkk"
                 frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe> -->
             <div class="col-md-12 text-center">
-                <img src="./images/logo4.1.png" width="auto" class="" alt="">
+                <img src="./images/logo4.1.png" class="img-fluid" width="auto" class="" alt="">
             </div>
 
-        </div>
+            <div class="col-md-12 text-center">
+                <h1 class="" style="text-shadow:1px 1px 0 #444">Inscrição na Mad Game Jam</h1>
+            </div>
+
         </div>
 
         <div class="row">
-            <!-- Descrição da equipa -->
-            <div class="col-sm-3 text-center" style="border-right: 1px solid gray">
-                <h1>Fazer Equipa</h1>
-                <fieldset id="formEquipa">
-                    <label for="nomeEquipa">
-                        <h5>Nome Equipa</h5>
-                    </label>
-                    <input id="nomeEquipa" type="text" class="form-control" placeholder="Inventa...." autofocus
-                        required>
-                    <label for="nElementos">
-                        <h5>Nº Elementos</h5>
-                    </label>
-                    <input id="nElementos" type="number" class="form-control" min="1" max="5" value="1" required>
-                    <div style="margin-top: 15px;">
-                        <!-- <button type="submit" class="btn btn-success">Submeter</button> -->
-                        <button id="clear" class="btn btn-danger">Limpar</button>
-                    </div>
-                </fieldset>
-            </div>
+            <div class="col-md-12 text-center regulamento">
 
-            <!-- Elementos da Equipa -->
-            <div class="col-sm-9 text-sm-left">
-                <h1 class="text-center">
-                    Elementos
-                </h1>
+                <div class>
+                    <a id="btn1" class="regulamentobtn" data-target="#regulamentoText" data-toggle="collapse">Regulamento
+                        |
+                    </a>
+                    <a id="btn2" class="regulamentobtn" data-target="#Avisosimportantes" data-toggle="collapse"> |
+                        Avisos
+                        Importantes</a>
+                </div>
+                <div class="collapse show" id="regulamentoText">
+                    <p>- As equipas podem ser constituídas por até 5 participantes, criadas com antecedência ou na
+                        hora.
+                    </p>
+                    <p>
+                        - O jogo deve ser desenvolvido para correr em sistemas operativos Windows ou Mac OSX, como
+                        executável
+                        ou
+                        aplicação Web.
+                    </p>
+                    <p> - O tema e regras específicas para o jogo serão anunciados no próprio dia.
+                    </p>
+                    <p>
+                        - Os jogos terão de se relacionar de alguma forma com este tema.
 
-                <form id="nomeElementos">
-                    <div id="containerElementos">
-                    </div>
-                    <div class="text-center" style="margin-top: 20px">
-                        <button type="submit" class="btn btn-success">Finalizar Inscrição</button>
-                        <button type="reset" class="btn btn-danger">Limpar Nomes</button>
-                    </div>
-                </form>
+                    </p>
+                    <p>
+                        - Cada equipa é livre de usar as ferramentas que quiserem, desde que as tenha de forma legal na
+                        sua
+                        máquina. É aconselhada a utilização de motores de jogos gráficos (ex. Unreal, Unity) e plugins
+                        gratuitos de
+                        forma a facilitar o desenvolvimento de jogos.
+                    </p>
+                    <p>
+                        - Os materiais / Assets que sejam utilizados terão de ser criados pela própria equipa no dia,
+                        ou
+                        livres
+                        de
+                        direitos / royalty free.</p>
+                    <p>
+                        - O evento irá realizar-se nas instalações da ESMAD (Escola Superior de Media Artes e Design).
+                    </p>
+                    <p>- As inscrições terminam no dia 14 de Março de 2018 e estão limitadas a 50 pessoas ou a 10
+                        equipas.</p>
 
+                </div>
+                <div class="collapse text-center" id="Avisosimportantes">
+                    <p>-Todas as informações vão ser enviadas por email assim que possível e irão estar também
+                        disponíveis
+                        no
+                        facebook e website do evento respetivamente - https://www.facebook.com/madgamejam/ e
+                        http://www.gamejam.intermediartes.com (ainda desatualizado)</p>
+                    <p>- Existe um discord do evento que devem usar para receber informação durante o evento e para
+                        tirarem
+                        duvidas antes e durante do evento com maior facilidade, juntem-se a partir deste link -
+                        https://discord.gg/ZtnDq3H
+
+                    </p>
+                    <p> - Se possível tragam extensões e cabos de rede, embora existam vários disponíveis no local.
+                    </p>
+
+                    <p> - Irá existir sempre snacks e café disponível.</p>
+
+                    <p> - As 4 refeições, estão garantidas para vocês, sem qualquer tipo custo.</p>
+
+                    <p>- As refeições não são próprias para vegans/vegetarianos e contêm gluten.</p>
+
+                    <p>- Existe estacionamento gratuito, abrigado e disponível 24H no local.</p>
+
+                    <p>- Temos uma sala com blackout para descanso.</p>
+
+                    <p>- Aconselhamos que tragam colchões/sacos cama e almofadas para dormirem.</p>
+
+                    <p>- Existem num raio de 500 metros, Burguer King, Pizza Hut, Pingo Doce, Continente, Staples,
+                        Worten,
+                        Metro, Cafés e Água na boca (takeaway).</p>
+
+                    <p>- Existe possibilidade de transporte do metro de Vila do conde/Alto de pega até ao local, basta
+                        contactarem a pagina do facebook (https://www.facebook.com/madgamejam/, ou mandar SMS para
+                        912259093)
+                        com pelo menos 1 dia de antecedência.
+
+                    </p>
+                    <p>- Quem vier sozinho, será colocado numa equipa feita de pessoas sozinhas, ou juntado a uma
+                        equipa
+                        que
+                        não tenha ainda 5 membros.
+                    </p>
+                </div>
             </div>
         </div>
+        <div class="row">
+            <div class="col-md-12 text-center divBotoes">
+                <ul class="list-inline">
+                    <li class="list-inline-item">
+                        <button class="btn btn-dark btn-outline-success iniciarInscricao" data-toggle="collapse"
+                            data-target="#help1">Solo Adventure</button>
+                    </li>
+                    <li class="list-inline-item">
+                        <button class="btn btn-dark btn-outline-warning iniciarInscricao" data-toggle="collapse"
+                            data-target="#help2">Formar equipa</button>
+                    </li>
+                    <li class="list-inline-item">
+                        <button class="btn btn-dark btn-outline-info iniciarInscricao" data-toggle="collapse"
+                            data-target="#help3">Juntar-se a uma Equipa</button>
+                    </li>
+                </ul>
+                <div class="collapse help" id="help1">
+                    <div class="card card-body">
+                        Faz a tua inscrição e nós depois contactamos te se tivermos uma equipa para ti.
+                    </div>
+                </div>
+                <div class="collapse help" id="help2">
+                    <div class="card card-body">
+                        Faz a tua inscrição, regista a tua equipa e espera que os teus amigos se juntem.
+                    </div>
+                </div>
+                <div class="collapse help" id="help3">
+                    <div class="card card-body">
+                        Faz a tua inscrição e junta-te à tua equipa.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="formInicial">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <!-- Vai mostrar o progresso da inscrição -->
+                    <div class="progessBar">
+                        <h3 id="closeForm" class="text-right" title="Sair e Limpar"><i class="far fa-times-circle"></i></h3>
+                        <h1>Progresso</h1>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                                style="width: 100%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <h1 class="progessNumber"></h1>
+                </div>
+            </div>
+            <!-- <div class="row text-center"> -->
+            <div class="row" id="divFormInit" style="display: block">
+                <!-- div1 -->
+                <div class="col-md-12 text-center divForm">
+                    <form id="form-particiapnte" class="form">
+                        <!-- <div class="form-row">
+                            <div class="col "> -->
+                        <label for="mail">Email *</label> <input id="mail" type="email" autocomplete="off" placeholder="Email..."
+                            class="form-control">
+                        <label for="nome">Nome *</label> <input id="nome" type="text" placeholder="Nome..."
+                            autocomplete="off" class="form-control">
+                        <label for="tele">Numero telemovel </label> <input id="tele" type="number" placeholder="nº telemóvel"
+                            class="form-control" autocomplete="off">
+                        <!-- <label for="nome">Nome *</label> <input id="nome" type="text" placeholder="Nome..." class="form-control"> -->
+                        <!-- </div> -->
+                        <!-- <div class="col"> -->
+                        <label for="linkSN">
+                            Link Rede Social </label>
+                        <input id="linkSN" autocomplete="off" type="url" placeholder="Facebook, Google, Twitter..."
+                            class="form-control">
+                        <h3 class="text-center ar">Áreas de Atuação</h3>
+
+
+                        <ul class="list-inline areas-atuacao">
+                            <li class="list-inline-item">
+                                <h5 class="area"></h5>
+                            </li>
+                            <li class="list-inline-item">
+                                <h5 class="area"></h5>
+                            </li>
+                            <li class="list-inline-item">
+                                <h5 class="area"></h5>
+                            </li>
+                            <li class="list-inline-item">
+                                <h5 class="area"></h5>
+                            </li>
+                            <li class="list-inline-item">
+                                <h5 class="area"></h5>
+                            </li>
+                            <li id="outraLi" class="list-inline-item">
+                                <form id="outraAreaForm">
+                                    <label for="outra" autocomplete="off">Outra: </label>
+                                    <input id="outra" onkeypress="outraArea(event)" autocomplete="off" type="text"
+                                        class="form-control">
+                                </form>
+                            </li>
+                        </ul>
+                        <div class="col-md-12 listar-areas-atuacao text-center">
+                            <a title="clica para removeres" class="trigger info-color areaTags"><i class="far fa-times-circle eli"></i></a>
+                            <a title="clica para removeres" class="trigger info-color areaTags"><i class="far fa-times-circle eli"></i></a>
+                            <a title="clica para removeres" class="trigger info-color areaTags"><i class="far fa-times-circle eli"></i></a>
+                            <a title="clica para removeres" class="trigger info-color areaTags"><i class="far fa-times-circle eli"></i></a>
+                            <a title="clica para removeres" class="trigger info-color areaTags"><i class="far fa-times-circle eli"></i></a>
+                            <a title="clica para removeres" class="trigger info-color areaOutra"><i class="far fa-times-circle eli"></i></a>
+                            <!-- <button class="btn btn-dark" disabled>!</button> -->
+                        </div>
+                        <h3>Pretendes usufruir das refeições gratuitas no local? *</h3>
+                        <div class="form-check form-check-inline">
+                            <input type="radio" class="form-check-input" name="rad" id="s">
+                            <label for="s">SIM</label>
+                            <input type="radio" id="n" class="form-check-input" name="rad">
+                            <label for="n">NÃO</label>
+                        </div>
+
+
+                    </form>
+
+                </div>
+
+                <!-- </div> -->
+                <!-- </div> -->
+            </div>
+        </div>
+        <!-- Vai te uma tabela com as várias equipas para se poder escolher -->
+        <div id="escolherEquipa" class="row" style="display: none">
+            <!-- div2. -->
+            <div class="col-md-12">
+                <table class="table">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">Team</th>
+                            <th scope="col">Nº elementos</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tabelaEquipas">
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+        <div id="divFinal" class="row" style="display: none">
+            <div class="col-md-12 text-center">
+                <h1>Confirmar Dados</h1>
+            </div>
+            <div class="col-md-12 text-center">
+                <h4 id="nomePatFinal"></h4>
+                <p id="mailFinal">mail</p>
+                <p id="nTeleFinal">numero telemovel</p>
+                <h4>Areas Atuacao </h4>
+                <ul id="areasFinal" style="list-style: none;">
+                    <!-- Aqui vão ter que ser adicionadas cenas -->
+                </ul>
+                <p id="nomeEquipaFinal"></p>
+                <p id="comerFinal"></p>
+                <button type="button" class="btn btn-outline-dark" onclick="submeter()">Submeter</button>
+            </div>
+
+        </div>
+        <!-- </div> -->
+
+        <!-- div para formar uma equipa -->
+        </div>
+        <div class="row" id="criarEquipa" style="display: none">
+            <div class="col-md-12 text-center">
+                <h1>Formar Equipa</h1>
+                <input type="text" class="form-control" id="CriarEquipa" placeholder="Nome da Equipa">
+            </div>
+        </div>
+
+        <!-- Botões de cancelar e seguir em frente-->
+        <div id="buttons" class="col-md-12 text-center">
+            <button id="cancel" type="button" class="btn btn-outline-danger cancelar">Cancelar</button>
+            <button id="btn-next-step" type="button" class="btn btn-outline-success">Passo Seguinte</button>
+        </div>
+
     </section>
 
 
@@ -171,14 +405,16 @@
         </div>
     </div>
     <!-- </div> -->
+
+    <script src="classes.js"></script>
     <script src="index.js"></script>
+
     <!-- Script para o google maps-->
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDWwaEDkLeJWWeW2VzjqxXCJsqXuzqPLRc&callback=Mapa"></script>
 
     <!-- <script src="./node_modules/jquery/dist/jquery.slim.min.js"></script> -->
     <!-- Bem por agora está assim, mas a ideia é fazer isto com npm -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
