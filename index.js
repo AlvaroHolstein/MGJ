@@ -551,17 +551,21 @@ function readForm() {
         if (outraAreaFilled != null) this.areasAtuacaoFinal.push(outraAreaFilled)
         this.refeicoes = eatInSchool()
 
-        if (outraAreaFilled == null) guardar = false
-        else guardar = true;
 
-        if (areasAtuacaoSelected.length == 0) guardar = false
+        if (areasAtuacaoSelected.length == 0) {
+            if (outraAreaFilled == null) guardar = false
+            else guardar = true;
+        }
         else guardar = true
 
         if (this.email == "" || this.nome == "") guardar = false;
     }
 
+
     if (progressVar == 2) {
-        if (document.getElementById('CriarEquipa').value == "") guardar = false
+        if (document.getElementById('CriarEquipa').value == "") {
+            if (JSON.parse(sessionStorage.getItem('opcaoInscricao')) != "Juntar-se a uma Equipa") guardar = false
+        }
         else {
             sessionStorage.setItem('nomeEquipaGuardar', JSON.stringify(document.getElementById('CriarEquipa').value))
         }
@@ -576,6 +580,7 @@ function readForm() {
         else {
             if (progressVar < 2) progressVar++
         }
+        console.log('alalalalalalal', guardar)
 
 
         //Div's em variáveis para ser mais fácil não me perder

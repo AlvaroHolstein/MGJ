@@ -13,6 +13,7 @@ class Participante {
         this.come = refeicoesGratuitas
         this.dataInscricao = new Date().toISOString().split('T')[0]
         this.id_equipa = id_equipa //if null é porque quer que lhe atribuiam uma equipa, se não é porque já tem uma
+        this.data = new Date().toISOString().split('T')[0]
     }
 
     getId() {
@@ -26,6 +27,7 @@ class Equipa {
         this.nome = nome
         this.nomeJogo = nomeJogo
         this.desc = desc
+        this.data = new Date().toISOString().split('T')[0]
     }
 
     getId() {
